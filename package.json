@@ -1,0 +1,15 @@
+{
+  "name": "04-base-node",
+  "version": "1.0.0",
+  "description": "App para generar tablas de multiplicar por medio de yargs",
+  "main": "app16.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernardo Culum",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.7.2"
+  }
+}
