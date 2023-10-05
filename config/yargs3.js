@@ -1,7 +1,3 @@
-/**
- * se agrega un describe para que en la ayuda del uso de la app co help
- * describa de mejor forma la aplicación
- */
 
 const { options } = require('yargs');
 
@@ -19,20 +15,19 @@ const argv = require('yargs')
         alias: 'listar',
         type: 'boolean',
         demandOption: false,
-        //default: false, se quita ya que esta por defaul en la app principal
         describe: 'Muestra la lista de la tabla en consola'
     })
     .option('h', {
         alias: 'hasta',
         type: 'number',
         demandOption: true,
-        // default: 10,
+        default: 10,
         describe: 'Este es el numero donde quieres la tabla'
     })
 
-    .check((argv) => {
-        if (isNaN(argv.b, options)) {
-            throw  'La base tiene que se ser un número'
+    .check((argv, options) => {
+        if (isNaN(argv.b,)) {
+            throw  'La base tiene que ser un número'
         }
         return true;
     })
